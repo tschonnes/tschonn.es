@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tschonn.es</title>
+    <meta name="description" content="My name is Jonas (often mispronounced as Tschonnes) and I am a software developer. Wave at me to get in contact!">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: monospace;
+            color: #121212;
+            background: #fff;
+        }
+
+        .content {
+            height: 100vh;
+        }
+
+        .content, .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            flex: 1;
+        }
+
+        .dot {
+            color: #808080;
+        }
+
+        .wave a {
+            font-size: 8em;
+            text-decoration: none;
+        }
+
+        .wave:hover {
+            transform-origin: bottom right;
+            animation-name: wiggle;
+            -webkit-animation-name: wiggle;
+            animation-duration: 700ms;
+            -webkit-animation-duration: 700ms;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-timing-function: ease-in-out;
+        }
+
+        .links {
+            height: 4em;
+        }
+
+        .links a {
+            color: #121212;
+        }
+
+        @-webkit-keyframes wiggle {
+            0% {-webkit-transform: rotate(0deg);}
+            25% {-webkit-transform: rotate(-10deg);}
+            50% {-webkit-transform: rotate(10deg);}
+            75% {-webkit-transform: rotate(-5deg);}
+            100% {-webkit-transform: rotate(0deg);}
+        }
+
+        @keyframes wiggle {
+            0% {transform: rotate(0deg);}
+            25% {transform: rotate(-10deg);}
+            50% {transform: rotate(10deg);}
+            75% {transform: rotate(-5deg);}
+            100% {transform: rotate(0deg);}
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #eee;
+                background: #121212;
+            }
+
+            .links a {
+                color: #eee;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+            <h1>tschonn<span class="dot">.</span>es</h1>
+            <br>
+            <p class="wave">
+                <a href="mailto:hi@tschonn.es">&#x1F44B;</a>
+            </p>
+        </div>
+        <div class="links">
+            <a href="http://www.linkedin.com/in/jonasheilmann" target="blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+</html>
