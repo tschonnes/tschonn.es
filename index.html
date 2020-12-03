@@ -56,12 +56,8 @@
             margin: 0 -4px;
         }
 
-        .wave a {
-            font-size: 8em;
-            text-decoration: none;
-        }
-
-        .wave:hover {
+        .wave {
+            animation-play-state: paused;
             transform-origin: bottom right;
             animation-name: wiggle;
             -webkit-animation-name: wiggle;
@@ -71,6 +67,15 @@
             -webkit-animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
             -webkit-animation-timing-function: ease-in-out;
+        }
+
+        .wave a {
+            font-size: 8em;
+            text-decoration: none;
+        }
+
+        .wave:hover {
+            animation-play-state: running;
         }
 
         .links {
@@ -119,7 +124,7 @@
             </p>
         </div>
         <div class="links">
-            <a href="httpsw://www.linkedin.com/in/tschonnes/" target="blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/tschonnes/" target="blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
 </body>
